@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-center"><b>Fund Screener</b> </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href= "#Managers" class="w3-bar-item w3-button w3-medium">Managers</a>
+      <div class="dropdown">
+        <button class="w3-bar-item dropbtn w3-medium"> Performance </button>  
+        <div class= "dropdown-content">  
+          <a href="http://127.0.0.1:5000/funds/all_high_perf">High Performers </a>  
+          <a href="http://127.0.0.1:5000/funds/all_mid_perf"> Mid Performers </a> 
+          <a href="http://127.0.0.1:5000/funds/all_low_perf"> Low Performers </a>  
+        </div>  
+      </div>
+
+      <div class="dropdown">
+        <button class="w3-bar-item dropbtn w3-medium"> Risk Profile </button>  
+        <div class= "dropdown-content">  
+          <a href="http://127.0.0.1:5000/funds/low_risk"> Low Risk </a>  
+          <a href="http://127.0.0.1:5000/funds/med_risk"> Medium Risk </a>  
+          <a href="http://127.0.0.1:5000/funds/high_risk"> High Risk </a>    
+        </div>  
+      </div>
+
+      <div class="dropdown">
+        <button href="http://127.0.0.1:5000/funds/all_funds" class="w3-bar-item dropbtn w3-medium"> Alphabetical Split </button>  
+        <div class= "dropdown-content">  
+          <a href="http://127.0.0.1:5000/funds/AD"> A-D </a>
+          <a href="http://127.0.0.1:5000/funds/EH"> E-H </a>
+          <a href="http://127.0.0.1:5000/funds/IL"> I-L </a>
+          <a href="http://127.0.0.1:5000/funds/MP"> M-P </a> 
+          <a href="http://127.0.0.1:5000/funds/QT"> Q-T </a> 
+          <a href="http://127.0.0.1:5000/funds/UZ"> U-Z </a>   
+        </div>  
+      </div>
+      <a href= "#Perf_risk_matrix" class="w3-bar-item w3-button w3-medium">Performance-Risk Matrix</a>
+
+      
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  
+  <img class="w3-image" src="C:\Users\elaar\Python_ cours_M2\python project\images\'page_background.jpg" alt="Money" width="1500" height="800">
+  
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-black"><span class="w3-padding w3-black"><b>Fund</b></span> <span class="w3-hide-small w3-text-dark-grey">Screener</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="Managers">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"> Managers </h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Amundi Asset Management</div>
+        <a href= "http://127.0.0.1:5000/funds/amundi"><img class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\amundi_logo.png" alt="Amundi" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Business Growth Fund</div>
+        <a href= "http://127.0.0.1:5000/funds/bgf"><img class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\bgf_logo.jpg" alt="BGF" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Blackrock</div>
+        <a href= "http://127.0.0.1:5000/funds/blackrock"><img class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\blackrock_logo.png" alt="Blackrock" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Société Générale</div>
+        <a href= "http://127.0.0.1:5000/funds/sg"><img class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\sg_logo.png" alt="SG" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">CPR Asset Management</div>
+        <a href= "http://127.0.0.1:5000/funds/cpr"><img class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\cpr_logo.jpg" alt="CPR" style="width:99%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Edmond de Rothschild Foundations</div>
+        <a href= "http://127.0.0.1:5000/funds/edrf"><img class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\edrf_logo.png" alt="edrf" style="width:99%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Etoile gestion</div>
+        <a href= "http://127.0.0.1:5000/funds/etoilegestion"><img  class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\etoileg_logo.jpg" alt="etoile gestion" style="width:99%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding w3-display-container">First Eagle Investment Management</div>
+        <a href= "http://127.0.0.1:5000/funds/firsteagle"><img class="img" src="C:\Users\elaar\Python_ cours_M2\python project\images\FirstEagle_logo.jpg" alt="first eagle" style="width:99%"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p> Welcome to our European Fund Screener. The idea is simple: have some extra money you would like to invest in a secured fund ? 
+      In this website we present to you a list of 0% capital loss European funds. 
+      We know that risk and performance apetite changes from a customer to another, and so, we did our research and categorized these funds depending on their risk and performances observed within the last 12months.
+      You would like to directly find the funds of our main asset managers ? You can have instant access to the different funds created by BlackRock, Amundi and other leading entities in the field by directly clicking on the images above !
+      Don't forget to check our Performance-Risk matrix below to be sure to find the fund that suits you best !
+    </p>
+  </div>
+
+  <div class="w3-container w3-padding-32" id="Perf_risk_matrix"><h2>Performance-Risk Matrix: </h2></div>
+    <table>
+      <tr><th>Perf/risk</th>
+            <th style="text-align: center" class="LR">Low Risk</th>
+            <th style="text-align: center" class="MR">Medium risk</th>
+            <th style="text-align: center" class="HR">High risk</th>
+            <th>All by perf</th>
+            </tr>
+            <tr><th class="LR">Low perf</th>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/low_risk_low_perf">low risk & perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/mid_risk_low_perf">Mid risk & low perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/high_risk_low_perf">High risk & low perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/all_low_perf">All low perf </a></td>
+              </tr>
+            <tr><th class="MR">Mid perf</th>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/low_risk_mid_perf">Low risk & Mid perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/mid_risk_mid_perf">Mid risk & Mid perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/high_risk_mid_perf">High risk & Mid perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/all_mid_perf">All mid perf </a></td>
+              </tr>
+            <tr><th class="HR">High perf</th>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/low_risk_high_perf">Low risk & High perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/mid_risk_high_perf">Mid risk & High perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/high_risk_high_perf">High risk & High perf </a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/all_high_perf">All high perf </a></td>
+              </tr>
+            <tr><th>All by risk</th>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/low_risk">All low risk</a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/med_risk">All mid risk</a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds/high_risk">All high risk</a></td>
+              <td style="text-align: center"><a href="http://127.0.0.1:5000/funds_all">All Funds </a></td>
+              </tr>
+    </table>
+
+  
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="Contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next fund project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer 
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>-->
+
+</body>
+</html>
+
